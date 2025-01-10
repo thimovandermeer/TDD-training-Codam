@@ -70,6 +70,8 @@ Each project includes guides and examples in the `training-materials/` folder. F
 
 - Use the `tests/` folder in each project to write your tests.
 - Run tests locally using your preferred tools or the provided Makefile.
+  - As a one-time operation, to build the dependencies (the testing framework), run `make deps`.
+  - Run `make test` to build and run your tests.
 
 ### **5. Collaborate Through GitHub**
 
