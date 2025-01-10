@@ -42,9 +42,11 @@ By the end of this training, you will have developed solid programming habits an
 ### **1. Clone the Repository**
 
 ```bash
-$ git clone https://github.com/yourusername/Codam-TDD-Training.git
+$ git clone --recurse-submodules https://github.com/yourusername/Codam-TDD-Training.git
 $ cd Codam-TDD-Training
 ```
+Note the project uses git submodules for dependencies.
+If you cloned without the `--recurse-submodules` option, you will need to run `git submodule update --init`.
 
 ### **2. Navigate to the Current Project**
 
