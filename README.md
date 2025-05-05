@@ -1,6 +1,6 @@
 # Codam TDD Training Repository
 
-Welcome to the **Codam Test-Driven Development (TDD) Training** repository! This project is designed to help Codam students master TDD, unit testing, and code reviews while progressing through key projects like **libft**, **X**, and **Webserver**.
+Welcome to the **Codam Test-Driven Development (TDD) Training** repository! This project is designed to help Codam students master TDD, unit testing, and code reviews while progressing through key projects like **libft**, **Minishell**, and **Webserver**.
 
 ## **Purpose**
 
