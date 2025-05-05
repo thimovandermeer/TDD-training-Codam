@@ -23,7 +23,7 @@ By the end of this training, you will have developed solid programming habits an
 - Setting up a project structure for testing.
 - Understanding the principles of TDD.
 
-### 2. **X: Expanding Scope**
+### 2. **Minishell: Expanding Scope**
 
 - Writing larger scope tests.
 - Automating tests with GitHub Actions.
@@ -53,7 +53,7 @@ If you cloned without the `--recurse-submodules` option, you will need to run `g
 Each project has its own folder:
 
 - `libft/`
-- `X/`
+- `Minishell/`
 - `Webserver/`
 
 Start with `libft` and work your way up.
