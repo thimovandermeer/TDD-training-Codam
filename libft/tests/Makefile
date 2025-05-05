@@ -1,33 +1,47 @@
-# Name of the test executable to build
-OUT = test_libft
+CXX = g++
+CXXFLAGS = -std=c++20 -Wall -Wextra -Werror
 
-# Management of dependencies: third party (Googletest) and libft
+# Paths
+GTEST_DIR = ../../deps/googletest
+GTEST_BUILD_DIR = $(GTEST_DIR)/build
+GTEST_INCLUDE = $(GTEST_DIR)/googletest/include
+GTEST_LIB_DIR = $(GTEST_BUILD_DIR)/lib
 
-DEPS_INCLUDE_FOLDERS = ../../deps/include ../src
-DEPS_LIB_FOLDERS = ../../deps/lib ../src
-DEPS_LIBS = gmock_main gmock gtest stdc++ ft
+# Include & lib paths
+INCLUDES = -I../../deps/include -I../src -I$(GTEST_INCLUDE)
+LIB_DIRS = -L../../deps/lib -L../src -L$(GTEST_LIB_DIR)
 
-# Compiler to use
-CC = gcc
-# C++ version
-CXX_STD_VERSION = c++20
-CC_FLAGS = -Wall -Wextra -Werror
+# Libraries to link
+LIBS = -lgmock_main -lgmock -lgtest -lstdc++ -lft
 
-SRC = $(wildcard *.cpp)
-OBJ = $(SRC:.cpp=.o)
+# Test source files
+TESTS = test_char_functions.cpp
+OBJS = $(TESTS:.cpp=.o)
+TARGET = run_tests
 
-all: $(OUT)
+.PHONY: all clean gtest clean-gtest test
 
-test: all
-	./$(OUT)
+all: gtest $(TARGET)
 
-$(OUT): $(OBJ)
-	$(CC) -o $@ $(foreach folder,$(DEPS_LIB_FOLDERS),-L$(folder)) $(foreach lib,$(DEPS_LIBS),-l$(lib)) $^
+$(TARGET): $(OBJS)
+	$(CXX) $(OBJS) $(LIB_DIRS) $(LIBS) -o $@
 
 %.o: %.cpp
-	$(CC) $(foreach folder,$(DEPS_INCLUDE_FOLDERS),-I$(folder)) --std=$(CXX_STD_VERSION) $(CC_FLAGS) -c -o $@ $<
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $< -o $@
+
+gtest:
+	@echo "🔧 Building Googletest..."
+	@mkdir -p $(GTEST_BUILD_DIR)
+	cd $(GTEST_DIR) && \
+	cmake -S . -B build -DCMAKE_BUILD_TYPE=Release && \
+	cmake --build build
 
 clean:
-	@rm -f $(OUT) $(OBJ)
+	rm -f $(OBJS) $(TARGET)
 
-distclean: clean
+clean-gtest:
+	rm -rf $(GTEST_BUILD_DIR)
+
+test: all
+	@echo "🚀 Running tests..."
+	./$(TARGET)
