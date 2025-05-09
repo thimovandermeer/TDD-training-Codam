@@ -32,6 +32,7 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 - [ ] Write `training-materials/Unit-Testing-Guide.md` (Kelvin)
 - [ ] Write `training-materials/Sample-Test-Walkthrough.md` (Kelvin)
 - [ ] Provide high-level guide in `training-materials/README.md` (optional)
+- [ ] Set up GitHub Actions workflow for running tests (e.g., `minishell` on PR) This is only necessary for minishell and webserve (Thimo)
 
 ---
 
@@ -39,12 +40,6 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 
 - [ ] Create GitHub Code Review Template in `feedback/templates/` (Do we still want todo this Kelvin?)
 - [X] Set up `README.md` with student-facing instructions (✅ done)
-
----
-
-## 🚀 Automation (Optional)
-
-- [ ] Set up GitHub Actions workflow for running tests (e.g., `minishell` on PR) This is only necessary for minishell and webserve (Do we still want todo this Kelvin?)
 
 ---
 
