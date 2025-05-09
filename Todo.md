@@ -7,15 +7,14 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 ## 🗂️ Repository Structure
 
 - [ ] Create folders for each project:
-  - [ ] `libft/`
-  - [ ] `Minishell/`
-  - [ ] `Webserver/`
-- [ ] Create shared documentation folder: `training-materials/`
-- [ ] Create feedback templates folder: `feedback/templates/` (Do we still want todo this Kelvin?)
+  - [ ] `libft/` (Thimo)
+  - [ ] `Minishell/` (Thimo)
+  - [ ] `Webserver/` (Later)
+- [ ] Create feedback templates folder: `feedback/templates/` (TBD)
 
 ---
 
-## 🧪 Testing Infrastructure
+## 🧪 Testing Infrastructure (Thimo)
 
 - [ ] Add `tests/` subfolder inside each project directory
 - [ ] Add a shared or per-project `Makefile` with:
@@ -26,7 +25,7 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 
 ---
 
-## 📘 Training Materials
+## 📘 Training Materials (Kelvin)
 
 - [ ] Write `training-materials/TDD-Basics.md` (Kelvin)
 - [ ] Write `training-materials/Unit-Testing-Guide.md` (Kelvin)
@@ -43,10 +42,10 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 
 ---
 
-## 📚 Additional Resources
+## 📚 Additional Resources (Kelvin)
 
-- [ ] Write `Recommended-Books.md`
-- [ ] Write `Useful-Links.md`
+- [ ] Write `Recommended-Books.md` (Kelvin)
+- [ ] Write `Useful-Links.md` (Kelvin)
 
 ---
 
