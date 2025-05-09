@@ -28,9 +28,9 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 
 ## 📘 Training Materials
 
-- [ ] Write `training-materials/TDD-Basics.md`
-- [ ] Write `training-materials/Unit-Testing-Guide.md`
-- [ ] Write `training-materials/Sample-Test-Walkthrough.md`
+- [ ] Write `training-materials/TDD-Basics.md` (Kelvin)
+- [ ] Write `training-materials/Unit-Testing-Guide.md` (Kelvin)
+- [ ] Write `training-materials/Sample-Test-Walkthrough.md` (Kelvin)
 - [ ] Provide high-level guide in `training-materials/README.md` (optional)
 
 ---
