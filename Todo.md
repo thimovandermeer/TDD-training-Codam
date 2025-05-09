@@ -56,7 +56,7 @@ This checklist outlines all the tasks needed to fully prepare this repository as
 ## Preparation
 
 - [ ] Do Projects ourselves with our docs to see what students might run into
-- 
+- [ ] Prepare presentation
 ---
 
 
